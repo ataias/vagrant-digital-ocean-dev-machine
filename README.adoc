@@ -25,6 +25,14 @@ A cloud setup nowadays can be quite effective with a tool like https://code.visu
 - vagrant up
 - vagrant provision --provision-with-ansible
 
+== TODOs
+- Make ssh key copying optional and add as parameters in a file or indicate commands to set it
+- Install nodejs and npm
+- Install postgresql-client
+- Add line to hosts file `127.0.0.1 postgres`
+- Install "glances"
+- Install zsh plugins
+
 == License
 
 See xref:./LICENSE[LICENSE] for more info.

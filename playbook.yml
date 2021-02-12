@@ -18,3 +18,17 @@
       apt:
         name: ["mosh", "jq"]
         state: present
+    - name: Copy ssh private key file
+      ansible.builtin.copy:
+        src: ~/.ssh/digital_ocean_rsa
+        dest: ~/.ssh/id_rsa
+        owner: root
+        group: root
+        mode: '0400'
+    - name: Copy ssh public key file
+      ansible.builtin.copy:
+        src: ~/.ssh/digital_ocean_rsa.pub
+        dest: ~/.ssh/id_rsa.pub
+        owner: root
+        group: root
+        mode: u=rw,g=r,o=r

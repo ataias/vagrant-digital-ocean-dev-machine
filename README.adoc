@@ -1,0 +1,18 @@
+= Vagrant Dev Machine with Digital Ocean
+
+This project contains a Vagrantfile with Ansible provisioning to setup a ubuntu dev machine with common dev tools like:
+
+* https://ohmyz.sh[oh-my-zsh]
+* https://www.docker.com[docker] and docker-compose
+* https://github.com/sharkdp/fd[fd-find]
+* https://github.com/BurntSushi/ripgrep[ripgrep]
+
+== Motivation
+
+I do not always want to install certain dev environments on my machine or I may have limitations on my local machine (like using a Macbook M1 when docker and vms are in alpha/beta or a Raspberry Pi) that motivate one to develop on the cloud.
+
+A cloud setup nowadays can be quite effective with a tool like https://code.visualstudio.com/docs/remote/remote-overview[VSCode Remote Development] which allows you to connect to a VM or Docker image seemlessly.
+
+== License
+
+See xref:./LICENSE[LICENSE] for more info.

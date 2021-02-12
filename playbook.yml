@@ -1,0 +1,20 @@
+---
+- name: Set up dev tools
+  hosts: "all"
+
+  pre_tasks:
+    - name: Update apt cache if needed.
+      apt: update_cache=yes cache_valid_time=3600
+
+  roles:
+    - role: gantsign.oh-my-zsh
+      users:
+        - username: root
+    - role: "nickjj.docker"
+      tags: ["docker"]
+
+  tasks:
+    - name: Install utility packages
+      apt:
+        name: ["mosh", "jq"]
+        state: present

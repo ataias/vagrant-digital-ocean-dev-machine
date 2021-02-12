@@ -13,6 +13,18 @@ I do not always want to install certain dev environments on my machine or I may 
 
 A cloud setup nowadays can be quite effective with a tool like https://code.visualstudio.com/docs/remote/remote-overview[VSCode Remote Development] which allows you to connect to a VM or Docker image seemlessly.
 
+== How To Use
+=== Requirements
+- Set up the variable `DIGITAL_OCEAN_TOKEN`
+- Install vagrant
+- Install the plugin (FIXME, add link)
+- Install ansible
+- Install ansible requirements: `ansible-galaxy -r requirements.yml`
+
+=== Running
+- vagrant up
+- vagrant provision --provision-with-ansible
+
 == License
 
 See xref:./LICENSE[LICENSE] for more info.
